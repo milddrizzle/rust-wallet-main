@@ -1,0 +1,13 @@
+[package]
+name = "kefir"
+version = "0.1.0"
+authors = ["bluebirdrust"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv="1.1"
+pickledb = "0.4.1"
+serde = "1.0.106"
+tokio = { version = "0.2", features = ["full"] }
