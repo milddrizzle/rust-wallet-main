@@ -1,12 +1,9 @@
-//tutorial-read-01.rs
 use csv;
-
 use std::env;
 use std::error::Error;
 use std::ffi::OsString;
 use std::fs::File;
 use std::process;
-
 
 
 fn run() -> Result<(), Box<dyn Error>> {
@@ -20,8 +17,8 @@ fn run() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-/// Returns the first positional argument sent to this process. If there are no
-/// positional arguments, then this returns an error.
+// Returns the first positional argument sent to this process. If there are no
+// positional arguments, then this returns an error.
 fn get_first_arg() -> Result<OsString, Box<dyn Error>> {
     match env::args_os().nth(1) {
         None => Err(From::from("expected 1 argument, but got none")),
